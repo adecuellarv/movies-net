@@ -1,8 +1,6 @@
 ﻿using WebApplication1.Domain.Entities;
 using WebApplication1.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
 using WebApplication1.Infrastructure.Context;
 
 namespace WebApplication1.Infrastructure.Repositories
