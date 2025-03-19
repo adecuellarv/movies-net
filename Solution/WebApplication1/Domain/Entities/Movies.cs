@@ -1,7 +1,10 @@
-﻿namespace WebApplication1.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication1.Domain.Entities
 {
     public class Movies
     {
+        [Key]
         public int MovieId { get; set; }
         public string MovieTitle { get; set; }
         public string? MovieDescription { get; set;}
