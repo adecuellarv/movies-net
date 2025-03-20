@@ -20,6 +20,17 @@ builder.Services.AddScoped<ActorService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<MovieService>();
 
+// Configuracion de servicios
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin() // Permitir cualquier origen
+               .AllowAnyMethod() // Permitir cualquier metodo (GET, POST, etc.)
+               .AllowAnyHeader(); // Permitir cualquier encabezado
+    });
+});
+
 // Add services to the container.
 builder.Services.AddControllers();
 
@@ -28,6 +39,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
 
