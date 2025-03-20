@@ -47,7 +47,7 @@ This will create the necessary tables in your database.
 ### 5. Seed Initial Data
 If the repository contains a SQL script with sample data, execute it in your SQL Server:
 1. Open SSMS or any SQL tool.
-2. Execute the script `database_seed.sql` to populate initial data.
+2. Execute the scripts `actors_data.sql` `category_data.sql` `movies_data.sql` to populate initial data.
 
 ### 6. Run the Application
 Start the application using:
