@@ -1,12 +1,10 @@
-INSERT INTO [master].[dbo].[Actors] ([ActorId], [ActorName])
+INSERT INTO [Actors] ([ActorName])
 VALUES
-(1, 'Jim Carrey'),
-(2, 'Melissa McCarthy'),
-(3, 'Meryl Streep'),
-(4, 'Leonardo DiCaprio'),
-(5, 'Dwayne "The Rock" Johnson'),
-(6, 'Tom Cruise'),
-(7, 'Keanu Reeves'),
-(8, 'Sigourney Weaver');
-
-
+('Jim Carrey'),
+('Melissa McCarthy'),
+('Meryl Streep'),
+('Leonardo DiCaprio'),
+('Dwayne "The Rock" Johnson'),
+('Tom Cruise'),
+('Keanu Reeves'),
+('Sigourney Weaver');

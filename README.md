@@ -13,14 +13,15 @@ Before setting up the project, ensure you have the following installed:
 ### 1. Clone the repository
 ```sh
 git https://github.com/adecuellarv/movies-net.git
-cd Solution/WebApplication1
+cd Solution
 ```
 
 ### 2. Install NuGet Packages (if not installed)
 The project requires the following NuGet packages:
 ```sh
-dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-dotnet add package Microsoft.EntityFrameworkCore.Tools
+- cd .\WebApplication1
+- dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+- dotnet add package Microsoft.EntityFrameworkCore.Tools
 ```
 
 Alternatively, restore all dependencies:
@@ -58,10 +59,10 @@ The API will be available at `https://localhost:5054` or `http://localhost:7037`
 
 ### 7. API Endpoints
 The application exposes REST API endpoints.
-`http://localhost:7037/api/categories`
-`http://localhost:7037/api/actors`
-`http://localhost:7037/api/movies`
-`http://localhost:7037/api/movies?actor=category=`
+- `https://localhost:7037/api/categories`
+- `https://localhost:7037/api/actors`
+- `https://localhost:7037/api/movies`
+- `https://localhost:7037/api/movies?actor=category=`
 
 
 ## Additional Notes
